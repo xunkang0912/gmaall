@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: search-service
+  cloud:
+    nacos:
+      config:
+        server-addr: localhsot:8848
+
+

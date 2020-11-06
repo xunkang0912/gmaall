@@ -6,6 +6,7 @@
  * 版权所有，侵权必究！
  */
 
+
 package com.atguigu.modules.oss.cloud;
 
 import com.qiniu.common.Zone;
@@ -19,11 +20,13 @@ import org.apache.commons.io.IOUtils;
 import java.io.IOException;
 import java.io.InputStream;
 
+
 /**
  * 七牛云存储
  *
  * @author Mark sunlightcs@gmail.com
  */
+
 public class QiniuCloudStorageService extends CloudStorageService {
     private UploadManager uploadManager;
     private String token;
@@ -75,3 +78,4 @@ public class QiniuCloudStorageService extends CloudStorageService {
         return upload(inputStream, getPath(config.getQiniuPrefix(), suffix));
     }
 }
+
